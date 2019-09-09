@@ -100,6 +100,7 @@ void process_command_line_arguments(int argc, char** argv)
 
 int main(int argc, char** argv)
 {
+    LOG(INFO) << "Build " << BUILD_NUMBER;
     TIMED_FUNC(timer);
 
     logging::configure();

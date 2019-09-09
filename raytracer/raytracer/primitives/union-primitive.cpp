@@ -123,30 +123,30 @@ namespace
         Primitive m_child1;
         Primitive m_child2;
     };
+
+    Primitive build_union_tree(std::vector<Primitive>& children, int from, int to)
+    {
+        assert(from < to);
+
+        if (to - from == 1)
+        {
+            return children[from];
+        }
+        else
+        {
+            int middle = (from + to) / 2;
+
+            auto left = build_union_tree(children, from, middle);
+            auto right = build_union_tree(children, middle, to);
+
+            return Primitive(std::make_shared<BinaryUnionImplementation>(left, right));
+        }
+    }
 }
 
 Primitive raytracer::primitives::make_union(std::vector<Primitive>& children)
 {
-    if (children.size() == 0)
-    {
-        LOG(ERROR) << "Union needs at least one child";
-        abort();
-    }
-    else
-    {
-        // TODO: This creates a linked list of children, would a balanced tree be more efficient
-        auto i = children.begin();
-
-        Primitive result = *i;
-
-        ++i;
-        while (i != children.end())
-        {
-            result = Primitive(std::make_shared<BinaryUnionImplementation>(result, *i));
-
-            ++i;
-        }
-
-        return result;
-    }
+    CHECK(children.size() != 0) << "Union needs at least one child";
+     
+    return build_union_tree(children, 0, children.size());
 }
