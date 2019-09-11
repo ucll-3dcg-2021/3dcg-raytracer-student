@@ -288,7 +288,7 @@ mutually_exclusive PointAnimation, AngleAnimation
 
 load 'team-data.rb'
 
-puts "Version 3.1"
+puts "Version 4.0"
 puts "*** Warning: this script might still change, but only in minor ways"
 
 check_mutually_exclusive
