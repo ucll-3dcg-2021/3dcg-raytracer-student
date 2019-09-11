@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 
-# Students:
+# To students:
 #  This file does not contain much of value for you
 #  Open team-data.rb instead
 
@@ -40,11 +40,11 @@ end
 class TeamMemberContext
   def initialize(member_id)
     raise "#{member_id} already exists" if $team.has_key? member_id
-    
+
     @member_id = member_id
     $team[member_id] = []
   end
-  
+
   def extension(extension)
     $team[@member_id] << extension
   end
@@ -132,7 +132,7 @@ end
 def check_mesh
   $team.each do |id, extensions|
     if not extensions.include? Mesh
-      
+
       puts "Uh oh! #{id} forgot to make the Mesh extension"
     end
   end
@@ -260,7 +260,7 @@ extension :Bounce, 3
 extension :Elastic, 3
 extension :Quadratic, 3
 extension :Cubic, 3
-extension :Quintic,3 
+extension :Quintic,3
 extension :PointAnimation, 2
 extension :AngleAnimation, 2
 extension :Quaternions, 2
