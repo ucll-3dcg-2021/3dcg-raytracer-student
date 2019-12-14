@@ -1,7 +1,7 @@
 team_member 'Nick' do
   extension BasicSample
   extension BasicScripting
-  
+
   extension RayTracerV1
   extension RayTracerV2
   extension RayTracerV3
@@ -12,7 +12,7 @@ end
 team_member 'Kurt' do
   extension BasicSample
   extension BasicScripting
-  
+
   extension RayTracerV4
   extension RayTracerV5
 end
@@ -88,6 +88,8 @@ end
 # extension SquareXYOptimized
 # extension SquareXZOptimized
 # extension SquareYZOptimized
+# extension Disk
+# extension DiskExtension
 # extension Cube
 # extension CylinderAlongX
 # extension CylinderAlongY
