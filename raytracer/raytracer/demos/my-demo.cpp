@@ -1,4 +1,4 @@
-#include "demos/basic-sample.h"
+#include "demos/my-demo.h"
 #include "demos/demo.h"
 #include "util/lazy.h"
 #include "easylogging++.h"
@@ -31,9 +31,9 @@ namespace
 
             // Define material properties
             MaterialProperties material_properties(
-                colors::red(),      // ambient lighting, not supported yet
-                colors::red(),      // diffuse lighting, not supported yet
-                colors::red(),      // specular highlights, not supported yet
+                colors::black(),      // ambient lighting, not supported yet
+                colors::black(),      // diffuse lighting, not supported yet
+                colors::black(),      // specular highlights, not supported yet
                 0                     // specular exponent, not supported yet
             );
 
@@ -90,7 +90,7 @@ namespace
     };
 }
 
-void demos::basic_sample(std::shared_ptr<pipeline::Consumer<std::shared_ptr<Bitmap>>> output)
+void demos::my_demo(std::shared_ptr<pipeline::Consumer<std::shared_ptr<Bitmap>>> output)
 {
     MeshDemo(500, 1_s, 30, 1).render(output);
 }

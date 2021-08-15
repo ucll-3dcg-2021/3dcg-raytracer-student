@@ -1,29 +1,26 @@
-team_member 'Nick' do
+team_member 'Nand' do
   extension BasicSample
   extension BasicScripting
-
+  extension PlaneXZ
+  extension PlaneXZOptimized
   extension RayTracerV1
   extension RayTracerV2
   extension RayTracerV3
-
-  extension PrimitiveRotationX
-end
-
-team_member 'Kurt' do
-  extension BasicSample
-  extension BasicScripting
-
   extension RayTracerV4
   extension RayTracerV5
-end
-
-team_member 'Dale' do
-  extension BasicSample
-  extension BasicScripting
-
   extension RayTracerV6
+  extension PrimitiveScaling
+  extension Triangle
+  extension TriangleOptimized
+  extension BoundingBox
+  extension Mesh
+  extension RandomSampler
+  extension StratifiedSampler
+  extension JitteredSampler
+  extension HalfJitteredSampler
+  extension NRooksSampler
+  extension MultijitteredSampler
 end
-
 
 
 # Possible extensions
@@ -37,7 +34,6 @@ end
 # extension RayTracerV4
 # extension RayTracerV5
 # extension RayTracerV6
-# extension RandomSampler
 # extension StratifiedSampler
 # extension JitteredSampler
 # extension HalfJitteredSampler
@@ -99,7 +95,6 @@ end
 # extension CylinderAlongZOptimized
 # extension Triangle
 # extension TriangleOptimized
-# extension BoundingBox
 # extension Cropper
 # extension CropperOptimized
 # extension Bumpifier

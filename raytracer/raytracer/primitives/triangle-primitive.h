@@ -6,8 +6,6 @@ namespace raytracer
 {
     namespace primitives
     {
-        Primitive xy_plane();
-        Primitive xz_plane();
-        Primitive yz_plane();
+        Primitive triangle(const math::Point3D&, const math::Point3D&, const math::Point3D&);
     }
 }

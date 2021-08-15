@@ -42,9 +42,13 @@ ModulePtr raytracer::scripting::_private_::create_primitives_module()
 #   define BIND_DIRECTLY(NAME)                         BIND_HELPER_FUNCTION_AS(raytracer::primitives::NAME, NAME)
     BIND_DIRECTLY(sphere);
     BIND_DIRECTLY(xy_plane);
+    BIND_DIRECTLY(xz_plane);
+    BIND_DIRECTLY(scale);
     BIND_HELPER_FUNCTION_AS(make_union, union);
     BIND_DIRECTLY(decorate);
     BIND_DIRECTLY(translate);
+    BIND_DIRECTLY(triangle);
+    BIND_DIRECTLY(mesh_renderer);
 #   undef BIND_HELPER_FUNCTION_AS
 #   undef BIND_DIRECTLY
 #   undef BIND_HELPER_FUNCTION

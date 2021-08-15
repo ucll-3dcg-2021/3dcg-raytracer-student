@@ -12,8 +12,8 @@ namespace math
     {
     public:
         Transformation3D(const Matrix4x4& transformation_matrix, const Matrix4x4& inverse_transformation_matrix)
-            : transformation_matrix(transformation_matrix), inverse_transformation_matrix(inverse_transformation_matrix)  { }
-    
+            : transformation_matrix(transformation_matrix), inverse_transformation_matrix(inverse_transformation_matrix) { }
+
         Matrix4x4 transformation_matrix;
         Matrix4x4 inverse_transformation_matrix;
     };
@@ -21,5 +21,9 @@ namespace math
     namespace transformations
     {
         Transformation3D translation(const Vector3D&);
+        Transformation3D rotate_around_x(const Angle& x);
+        Transformation3D rotate_around_y(const Angle& x);
+        Transformation3D rotate_around_z(const Angle& x);
+        Transformation3D scale(double sx, double sy, double sz);
     }
 }

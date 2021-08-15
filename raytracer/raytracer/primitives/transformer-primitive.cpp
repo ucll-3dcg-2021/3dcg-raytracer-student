@@ -95,3 +95,23 @@ Primitive raytracer::primitives::translate(const Vector3D& v, Primitive transfor
 {
     return transform(math::transformations::translation(v), transformee);
 }
+
+
+Primitive primitives::rotate_around_x(const math::Angle angle, const Primitive transformee)
+{
+    return transform(math::transformations::rotate_around_x(angle), transformee);
+}
+
+Primitive primitives::rotate_around_y(const math::Angle angle, const Primitive transformee)
+{
+    return transform(math::transformations::rotate_around_y(angle), transformee);
+}
+
+Primitive primitives::rotate_around_z(const math::Angle angle, const Primitive transformee)
+{
+    return transform(math::transformations::rotate_around_z(angle), transformee);
+}
+
+Primitive raytracer::primitives::scale(double sx, double sy, double sz, Primitive transformee) {
+    return transform(math::transformations::scale(sx, sy, sz), transformee);
+}

@@ -1,23 +1,11 @@
 {
-    "github-url": "TODO",
+    "github-url": "https://github.com/NandvanDongen/3dcg-raytracer-student.git",
     "team-members": [
         {
-            "first-name": "TODO",
-            "last-name": "TODO",
-            "student-id": "TODO",
-            "is-done": "TODO"
-        },
-        {
-            "first-name": "TODO",
-            "last-name": "TODO",
-            "student-id": "TODO",
-            "is-done": "TODO"
-        },
-        {
-            "first-name": "TODO",
-            "last-name": "TODO",
-            "student-id": "TODO",
-            "is-done": "TODO"
+            "first-name": "Nand",
+            "last-name": "Van Dongen",
+            "student-id": "r0717834",
+            "is-done": "yes"
         }
     ]
 }
